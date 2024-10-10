@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<ns6:modelConfig xsi:type="ns6:ModelConfig" folder="" pauseCalculations="false" entityCode="13" loadPath="github" entityName="github" version="14" name="github" lastUpdated="2024-10-10T09:44:52.750+03:00" lastUpdatedBy="admin" id="admin:MODEL:github" xmlns:ns6="http://www.modelshop.com/model/model/types" xmlns:ns5="http://www.modelshop.com/datacore/generator/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/datacore/repository/types" xmlns:ns3="http://www.modelshop.com/datacore/message/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <datalists entityCode="14" entityName="catalina" version="13" name="catalina" created="2024-10-10T09:44:52.750+03:00" createdBy="admin" lastUpdated="2024-10-10T09:44:52.750+03:00" lastUpdatedBy="admin" id="catalina">
+        <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="# Licensed to the Apache Software Foundation (ASF) under one or more" initialized="true" id="# Licensed to the Apache Software Foundation (ASF) under one or more"/>
+        <dataFields type="text" fieldCode="101" rawType="java.lang.String" allowNull="true" name="column2" initialized="true" id="column2"/>
+        <dataFields type="text" fieldCode="102" rawType="java.lang.String" allowNull="true" name="column3" initialized="true" id="column3"/>
+        <dataFields type="text" fieldCode="103" rawType="java.lang.String" allowNull="true" name="column4" initialized="true" id="column4"/>
+        <dataFields type="text" fieldCode="104" rawType="java.lang.String" allowNull="true" name="column5" initialized="true" id="column5"/>
+        <dataFields type="text" fieldCode="105" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="106" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+    </datalists>
+    <views allColumns="true" default="true" modelView="true" entityName="github" name="github" description="Default view for list github" id="github"/>
+    <views allColumns="true" default="true" entityName="catalina" name="catalina" description="Default view for list catalina" id="catalina"/>
+    <connectors layoutDetected="true" entityName="catalina" version="13" name="catalina" created="2024-10-10T09:44:52.750+03:00" createdBy="admin" lastUpdated="2024-10-10T09:44:52.750+03:00" lastUpdatedBy="admin" id="catalina">
+        <connectorFields ignore="false" mapField="# Licensed to the Apache Software Foundation (ASF) under one or more" type="text" rawType="String" allowNull="true" name="# Licensed to the Apache Software Foundation (ASF) under one or more" id="# Licensed to the Apache Software Foundation (ASF) under one or more"/>
+        <connectorFields ignore="false" mapField="column2" type="text" rawType="String" allowNull="true" name="column2" id="column2"/>
+        <connectorFields ignore="false" mapField="column3" type="text" rawType="String" allowNull="true" name="column3" id="column3"/>
+        <connectorFields ignore="false" mapField="column4" type="text" rawType="String" allowNull="true" name="column4" id="column4"/>
+        <connectorFields ignore="false" mapField="column5" type="text" rawType="String" allowNull="true" name="column5" id="column5"/>
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <dataSource connectorUrl="catalina.properties">
+            <fileSource>
+                <dataSourceRefs>catalina.properties</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="textfile">
+            <textMedia/>
+        </mediaConfig>
+    </connectors>
+    <extra name="ModelCanvasCoordinates" description="Coordinates for ModelCanvasCoordinates" id="ModelCanvasCoordinates">
+        <body>{"CONNECTOR:context":{"x":-158,"y":-4},"DATALIST:context":{"x":-59,"y":3},"CONNECTOR:catalina":{"x":-153,"y":-19},"DATALIST:catalina":{"x":-54,"y":-10}}</body>
+    </extra>
+</ns6:modelConfig>
